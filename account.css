@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav ul {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+nav a{
+    display: inline-block;
+    padding: 3.5em;
+    padding-top: 1.7em;
+    padding-bottom: .5em;
+    color: black;
+    text-decoration: none;
+}
+
+.toggle{
+    width: 95%;
+    padding: 10px 20px;
+    background-color: none;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+.nav a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: .8em;
+    font-weight: bolder;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    font-size: 1.8em;;
+    font-family: 'Sen', sans-serif;
+}
+
+
+/*Page header*/
+
+.page-header{
+    padding-bottom: 40px;
+}
+
+/*accordion block*/
+
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+ 
+}
+
+.panel {
+
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  
+  margin-bottom: 30px;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*loan table block*/
+
+.loantable{
+    
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating * {
+  float: right;
+}
+
+input {
+  display: none;
+}
+label {
+  font-size: 20px;
+}
+
+input:checked ~ label {
+  color: orange;
+}
+
+h1{padding:40px; text-align: center;}
+h2{padding-bottom:20px; }
+
+#submit-button{
+    margin-bottom:20px;
+}
+
+
+
+.add-form{background-color: ghostwhite;padding:20px; margin-bottom: 40px;}
+
+#add-button{color:white; padding:20px; }
+
+#add-btn-btn{margin-bottom:30px; align-content:center;}
+
+#add-btn{margin-bottom: 40px}
+
+#returnloan{float: right;}
+
+.trash, .edit {
+  	display: inline-flex;
+  	text-align: center;
+  	text-decoration: none;
+  	color: #FFFFFF;
+  	padding: 5px 5px;
+}
+.trash {
+  	background-color: #b73737;
+}
+ .trash:hover {
+  	background-color: #a33131;
+}
+
+.edit {
+  	background-color: #37afb7;
+}
+.edit:hover {
+  	background-color: #319ca3;
+}
+

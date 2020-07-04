@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav ul {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+nav a{
+    display: inline-block;
+    padding: 3.5em;
+    padding-top: 1.7em;
+    padding-bottom: .5em;
+    color: black;
+    text-decoration: none;
+}
+
+.toggle{
+    width: 95%;
+    padding: 10px 20px;
+    background-color: none;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+.nav a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: .8em;
+    font-weight: bolder;
+
+}
+
+@media screen and (min-width: 480px) {
+    .toogle {
+        display: block;
+    }
+    .ul {
+        width:100%;
+        display:none;
+    }
+    .ul li {
+        display: block;
+        text-align: center;
+    }
+    .nav a:hover {
+        color: red;
+    }
+    .active {
+        display: block;
+    }
+    
+    .login-container {
+        width:auto;
+        height: auto;
+    }
+
+}
+
+
+footer{
+    padding:  40px  40px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+
+}
+.info-container a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    color: black;
+}
+
+.info-container a:hover {
+    color: red;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.sign-in {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-bottom: 20px;;
+}
+
+.message {
+    text-decoration: none;
+    
+}
+
+.message > a{
+    color: rgb(240, 102, 102);
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.096);
+    margin: 70px 400px 0 400px;
+    padding: 50px 0 50px 0;
+    border-radius: 7px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 10px 10px 150px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 60%;
+    
+}
+
+
+#email {
+    font-size: 15px;
+    font-style: italic;
+}
+
+#password {
+      font-size: 15px;
+    font-style: italic;
+}
+#submit {
+    text-align: center;
+    background-color: black;
+    border-radius: 7px;
+    color: white;
+    font-weight: bolder;
+}
+
+#submit:hover {
+    color: white;
+    background-color: rgb(240, 102, 102);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forgotten-pass {
+    font-size: 10px;
+    text-align: center;
+    color: rgb(68, 67, 67);
+    font-style: italic;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register {
+    text-decoration: none;
+    color: white;
+    padding:10px 15px 10px 15px; 
+    background-color: black;
+    border-radius: 7px;
+    width: 60%;
+    font-weight: bolder;
+
+}
+
+.register:hover {
+    text-decoration: none;
+    color: white;  
+    background-color: rgb(240, 102, 102);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.registeracc:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.create-acc {
+    margin-top: 40px;
+    display: felx;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.registeracc {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
